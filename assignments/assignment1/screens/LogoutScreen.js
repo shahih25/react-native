@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 
-export default class ThankScreen extends React.Component {
+export default class LogoutScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
