@@ -2,43 +2,29 @@ import { StyleSheet } from "react-native";
 
 const BaseStyles = StyleSheet.create({
     main: {
-        padding: 10,
-        borderRadius: 5
+        alignSelf: "center",
+        margin: 10,
+        elevation: 8,
+        backgroundColor: "#009688",
+        borderRadius: 10,
+        paddingVertical: 20,
+        paddingHorizontal: 12
     },
     label: {
         color: "#fff"
     },
     rounded: {
-        borderRadius: 10
-    }
-});
-
-const Danger = StyleSheet.create({
-    main: {
-        backgroundColor: "#e74c3c"
-    }
-});
-
-const Info = StyleSheet.create({
-    main: {
-        backgroundColor: "#3498db"
-    }
-});
-
-const Success = StyleSheet.create({
-    main: {
-        backgroundColor: "#1abc9c"
-    }
-});
-
-const Default = StyleSheet.create({
-    main: {
-        backgroundColor: 'rgba(0, 0, 0, 0)'
+        borderRadius: 25
     },
-    label: {
-        color: "#333"
+    md_size: {
+        paddingHorizontal: 16,
+        paddingVertical: 12,
+        elevation: 12,
+        backgroundColor: "purple"
+    },
+    lg_size: {
+        backgroundColor: "blue"
     }
 });
 
 export default BaseStyles;
-export { Danger, Info, Success, Default };

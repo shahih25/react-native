@@ -1,0 +1,40 @@
+[
+    {
+        "title": "My First Button",
+        "size": "sm"
+    },
+    {
+        "title": "My Second Button",
+        "size": "md",
+        "backgroundColor": "#2B6109",
+        "rounded": true
+    },
+    {
+        "title": "My Third Button",
+        "size": "sm",
+        "backgroundColor": "#E384F2"
+    },
+    {
+        "title": "My Fourth Button",
+        "size": "sm",
+        "backgroundColor": "#C5B70C",
+        "info": true
+    },
+    {
+        "title": "My Fifth Button",
+        "size": "md",
+        "backgroundColor": "#333",
+        "rounded": true
+    },
+    {
+        "title": "My Sixth Button",
+        "size": "lg",
+        "backgroundColor": "red"
+    },
+    {
+        "title": "My Seventh Button",
+        "size": "lg",
+        "backgroundColor": "orange",
+        "rounded": true
+    }
+]

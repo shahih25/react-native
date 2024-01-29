@@ -1,43 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { Alert, StyleSheet, Text, View } from 'react-native';
-import Button from './button';
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeScreen from "./screens/HomeScreen";
 
-export default function App() {
+const Stack = createNativeStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Button style={styles.btn}>
-        My First Button
-      </Button>
-      <Button success style={styles.btn}>
-        Success Button
-      </Button>
-      <Button info style={styles.btn}>
-        Info Button
-      </Button>
-      <Button danger style={styles.btn} onPress={onPress}>
-        Danger Button
-      </Button>
-      <Button danger rounded style={styles.btn} onPress={onPress}>
-        Rounded Button
-      </Button>
-      <Button success children="Sample" />
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="HomeScreen">
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  btn: {
-    margin: 10
-  }
-});
-
-const onPress = () => {
-  Alert.alert("Alert", "You pressed danger button");
-}
+export default App;
